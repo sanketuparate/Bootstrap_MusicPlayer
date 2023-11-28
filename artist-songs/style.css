@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+p {
+  color: grey;
+}
+#all {
+  margin-top: 50px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#header {
+  display: flex;
+  background-color: #141a40;
+}
+#logo {
+  width: 20vw;
+  display: flex;
+}
+
+#logo img {
+  height: 60px;
+  margin-left: 30px;
+  margin-top: 10px;
+  width: auto;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+#logo p {
+  color: white;
+  margin-top: 25px;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#search {
+  width: 20vw;
+  height: 30px;
+  margin-left: auto;
+  display: flex;
+  margin-top: 15px;
+  background-color: #12183f;
+  border-radius: 8px;
+}
+
+#input {
+  background-color: transparent;
+  width: 85%;
+  color: white;
+  border-style: hidden;
+  outline: none;
+}
+
+#lens {
+  margin-top: 8px;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#mic {
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: 5px;
+  color: white;
+}
+
+#user {
+  width: 13vw;
+  display: flex;
+}
+
+#bell {
+  margin-top: 20px;
+  margin-left: 40px;
+  color: #e7e7e6;
+}
+
+#dot {
+  color: red;
+  height: 1px;
+  width: 1px;
+  margin-top: 20px;
+  margin-left: -5px;
+  font-size: 6px;
+}
+
+#user img {
+  height: 45px;
+  width: 45px;
+  margin-left: auto;
+  margin-right: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+body {
+  background-color: #0c1126;
+}
+main {
+  margin-top: 5rem;
+}
+/*********artist************/
+#fp {
+  /* margin-top: 100px; */
+  display: flex;
+  background-color: #141a40;
+}
+
+.details {
+  vertical-align: top;
+  flex-wrap: wrap;
+  margin: 50px 25px 0 25px;
+}
+.details h3 {
+  display: inline-block;
+}
+.details span {
+  float: right;
+}
+.btns {
+  margin-top: 50px;
+}
+.btns p {
+  color: white;
+  font-size: 0.6rem;
+  margin-left: 2px;
+  margin-top: 4px;
+}
+
+.btns button[name="play"] {
+  border-style: none;
+  background-image: linear-gradient(90deg, blue, purple, pink);
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+.btns button[name="follow"] {
+  border-style: none;
+  background: transparent;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+.lists {
+  margin-top: 20px;
+}
+.card {
+  width: 780px;
+  height: 60px;
+  background-color: #24273d;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.card span {
+  position: relative;
+  bottom: 20px;
+  margin-right: 10px;
+}
+.card-detail {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+}
+.card .duration {
+  margin-left: 200px;
+}
+.fa-heart {
+  margin-left: 700px;
+}
+.fa-plus {
+  margin-left: 20px;
+}
+/********similar artist*******/
+/* #sa {
+  margin-top: 100px;
+} */
+#sa h2 {
+  margin: 2%;
+}
+.latest-release-cards {
+  width: 450px;
+  height: 100px;
+  display: inline-block;
+  margin: 4%;
+}
+.latest-release-cards img {
+  width: 25%;
+  height: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: grey;
+  padding: 2px 2px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.data {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 100px;
+  margin-left: 20px;
+}
+.data span {
+  position: relative;
+  left: 220px;
+  bottom: 50px;
+}
+.data p {
+  margin: 15px 0;
+  color: white;
+}
+.data span p {
+  line-height: 1;
+  color: grey;
+}
+
+/**********recently played************/
+#recently-played {
+  margin-top: 20px;
+}
+#recently-played h2 {
+  margin: 4%;
+}
+.recent-song {
+  margin: 5% 5%;
+}
+.recent-song span {
+  vertical-align: top;
+  margin-right: 2%;
+}
+.recent-song img {
+  display: inline-block;
+}
+#recently-played .song-detail {
+  display: inline-block;
+  margin-left: 5%;
+  vertical-align: top;
+}
+
+.recent-song .fa-heart {
+  margin-left: 12rem;
+}

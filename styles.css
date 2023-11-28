@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+h2 {
+  margin-left: 20px;
+}
+p {
+  color: grey;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #0c1126;
+}
+#header {
+  display: flex;
+  background-color: #141a40;
+}
+#logo {
+  width: 20vw;
+  display: flex;
+}
+
+#logo img {
+  height: 60px;
+  margin-left: 30px;
+  margin-top: 10px;
+  width: auto;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+#logo p {
+  color: white;
+  margin-top: 25px;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#search {
+  width: 20vw;
+  height: 30px;
+  margin-left: auto;
+  display: flex;
+  margin-top: 15px;
+  background-color: #12183f;
+  border-radius: 8px;
+}
+
+#input {
+  background-color: transparent;
+  width: 85%;
+  color: white;
+  border-style: hidden;
+  outline: none;
+}
+
+#lens {
+  margin-top: 8px;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#mic {
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: 5px;
+  color: white;
+}
+
+#user {
+  width: 13vw;
+  display: flex;
+}
+
+#bell {
+  margin-top: 20px;
+  margin-left: 40px;
+  color: #e7e7e6;
+}
+
+#dot {
+  color: red;
+  height: 1px;
+  width: 1px;
+  margin-top: 20px;
+  margin-left: -5px;
+  font-size: 6px;
+}
+
+#user img {
+  height: 45px;
+  width: 45px;
+  margin-left: auto;
+  margin-right: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+/*********Section(song-varities)***********/
+#fp {
+  margin-top: 75px;
+}
+.cards {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 50vh;
+}
+
+.card {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 200%;
+  height: calc(100% - 0.5vh);
+  object-fit: cover;
+  transition: 0.5s;
+}
+.card:hover {
+  flex: 1 1 50%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
+}
+.card:hover img {
+  width: 100%;
+  height: 100%;
+}
+
+/*********latest-release*******/
+
+.latest-release-cards {
+  width: 40%;
+  height: 100px;
+
+  display: inline-block;
+  margin: 4%;
+}
+.container {
+  position: relative;
+  width: 30%;
+  height: 100px;
+  display: inline-block;
+}
+.image {
+  width: 100%;
+  height: 100px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.fa-user:hover {
+  color: grey;
+}
+
+.data {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 90px;
+  margin-left: 6px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: grey;
+  padding: 2px 2px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.data p {
+  margin: 20px 0;
+  color: white;
+}
+.data span {
+  color: lightslategrey;
+  font-size: 0.7rem;
+}
+.duration p {
+  margin: 3px 0 5px 0;
+  color: lightslategrey;
+  font-size: 0.8rem;
+}
+.duration {
+  display: inline-block;
+  vertical-align: top;
+}
+/********popular-artists*********/
+
+.artists {
+  display: flex;
+}
+.artists a {
+  margin: 2%;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.artists img {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+}
+/***********stations***********/
+
+.lists {
+  margin: 0 4%;
+}
+.lists img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  margin: 2%;
+}
+.station {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 2%;
+}
+/*********types***********/
+
+.types-cards {
+  width: 100%;
+  display: flex;
+}
+.types-card {
+  overflow: hidden;
+  margin: 4% 2%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.types-card img {
+  transition: all 1s;
+}
+.types-card img:hover {
+  transform: scale(1.5);
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/**********latest english***********/
+
+.eng-songs {
+  display: flex;
+}
+.eng-songs a {
+  margin: 2%;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+.eng-songs img {
+  height: 90px;
+  width: 90px;
+}
+/**********latest hindi***********/
+
+.hindi-songs {
+  display: flex;
+}
+.hindi-songs a {
+  margin: 2%;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+.hindi-songs img {
+  height: 90px;
+  width: 90px;
+}
+/************queue***********/
+#queue {
+  margin-top: 75px;
+  background-color: #0c1126;
+}
+.song {
+  margin: 10% 5%;
+}
+.song span {
+  vertical-align: top;
+  margin-right: 2%;
+}
+.song img {
+  display: inline-block;
+}
+.song-detail {
+  display: inline-block;
+  margin-left: 5%;
+  vertical-align: top;
+}
+.song span img {
+  float: right;
+}
+/********audio*********/
+
+#player {
+  background-color: grey;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+}
+#player img {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.song-title {
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+}
+.fa-heart {
+  margin: 0 15px;
+}
+.fa-ban {
+  margin-right: 23rem;
+}
+.track-details {
+  display: inline-block;
+  position: relative;
+  bottom: 30%;
+}
+.track-details i {
+  margin-right: 30px;
+}
+.track-details span i {
+  margin-right: 30px;
+  position: relative;
+  top: 5px;
+}
+.track-details input {
+  filter: hue-rotate(-95deg) blur(0.5px);
+
+  height: 5px;
+  display: inline-block;
+  position: relative;
+  top: 26px;
+  right: 380px;
+  width: 30rem;
+}
+.time {
+  margin: 0 5px;
+  font-size: 12px;
+  position: relative;
+  top: 26px;
+  right: 380px;
+}
+.features {
+  display: inline-block;
+  position: relative;
+  bottom: 29%;
+  left: 1150px;
+}
+.features i {
+  margin-right: 10px;
+}
+.features input {
+  filter: hue-rotate(-65deg) blur(0.5px);
+
+  height: 5px;
+  display: inline-block;
+  position: relative;
+  bottom: 4px;
+  width: 4rem;
+  margin-left: -9px;
+}
+/*****************************/
